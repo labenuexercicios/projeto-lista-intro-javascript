@@ -35,4 +35,4 @@ Responder os exercicios
     </details>
 - Entregue o **link do repo** no [Formulário de entrega](https://docs.google.com/forms/d/e/1FAIpQLSdPR0nbkJrSLjzUyU7US1W2Yw4ehkz0AnoQi4HfgYqqJyXi0w/viewform).
 
-**Opcional**: Tente utilizar o **Github pages** para fazer o deploy do seu projeto.
+
