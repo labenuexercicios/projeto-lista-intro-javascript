@@ -163,3 +163,6 @@ function checaValidadeInscricaoLabenu() {
   console.log(comparar)
 
 }
+
+
+//Quando Js vai me dar coisas?
