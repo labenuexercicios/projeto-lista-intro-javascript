@@ -13,7 +13,11 @@ Os problemas lógicos se baseiam em quatro conteúdos principais:
 ## Enunciado
 
  O objetivo é resolver uma lista problemas lógicos com a linguagem Javascript.
- O enunciado completo está no Sistema de Estudante, na sessão de Projetos https://estudante.labenu.com.br/conteudos/tecnico/projetos
+ O enunciado completo está no Sistema de Estudante, na sessão de Projetos 
+ 
+
+
+
 
 ### Lista de requisitos
 Responder aos exercícios
