@@ -127,34 +127,34 @@ function checaRenovacaoRG() {
   let idade = anoAtual - anoDeNascimento
   let tempoRg = anoAtual - emissaoRg
 
-  // if (idade <= 20) {
-  //   if (tempoRg >= 5) {
-  //     console.log(true);
-  //   } else {
-  //     console.log(false);
-  //   }
-  // } else if (idade <= 50) {
-  //   if (tempoRg >= 10) {
-  //     console.log(true);
-  //   } else {
-  //     console.log(false);
-  //   }
-  // } else if (idade > 50){
-  //   if (tempoRg >= 15){
-  //     console.log(true)
-  //   } else {
-  //     console.log(false)
-  //   }
-  // }
+  if (idade <= 20) {
+    if (tempoRg >= 5) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  } else if (idade <= 50) {
+    if (tempoRg >= 10) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  } else if (idade > 50){
+    if (tempoRg >= 15){
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+  }
 
 
   //outra forma de fazer
 
-  let num1 = idade <= 20 && tempoRg >= 5
-  let num2 = idade <= 50 && tempoRg >= 10
-  let num3 = idade > 50 && tempoRg >= 15
+  // let num1 = idade <= 20 && tempoRg >= 5
+  // let num2 = idade <= 50 && tempoRg >= 10
+  // let num3 = idade > 50 && tempoRg >= 15
 
-  console.log ( num1 || num2 || num3 )
+  // console.log ( num1 || num2 || num3 )
 
 }
 
@@ -171,11 +171,20 @@ function checaAnoBissexto(ano) {
     return false;
   }
 
+
 }
-console.log(checaAnoBissexto(1997))
+// console.log(checaAnoBissexto(2004))
 
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
-  // implemente sua lógica aqui
+  let pergunta1 = prompt(`Você tem mais de 18 anos?`)
+  let pergunta2 = prompt(`Você possui ensino médio completo?`)
+  let pergunta3 = prompt(`Você possui disponibilidade exclusiva durante os horários do curso?`)
 
+  if (pergunta1 === `sim` && pergunta2 === `sim` && pergunta3 === `sim`){
+    console.log(true)
+  } else {
+    console.log(false)
+  } 
+    
 }
