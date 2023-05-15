@@ -128,24 +128,34 @@ function checaRenovacaoRG() {
   let tempoRg = anoAtual - emissaoRg
 
   if (idade <= 20) {
-    if (tempoRg >= 5) {
-      console.log(true);
-    } else {
-      console.log(false);
-    }
+    console.log(tempoRg >= 5)
   } else if (idade <= 50) {
-    if (tempoRg >= 10) {
-      console.log(true);
-    } else {
-      console.log(false);
-    }
-  } else if (idade > 50){
-    if (tempoRg >= 15){
-      console.log(true)
-    } else {
-      console.log(false)
-    }
+    console.log(tempoRg >= 10)
+  } else if (idade > 50) {
+    console.log(tempoRg >= 15)
   }
+
+
+
+  // if (idade <= 20) {
+  //   if (tempoRg >= 5) {
+  //     console.log(true);
+  //   } else {
+  //     console.log(false);
+  //   }
+  // } else if (idade <= 50) {
+  //   if (tempoRg >= 10) {
+  //     console.log(true);
+  //   } else {
+  //     console.log(false);
+  //   }
+  // } else if (idade > 50){
+  //   if (tempoRg >= 15){
+  //     console.log(true)
+  //   } else {
+  //     console.log(false)
+  //   }
+  // }
 
 
   //outra forma de fazer
@@ -182,9 +192,12 @@ function checaValidadeInscricaoLabenu() {
   let pergunta3 = prompt(`Você possui disponibilidade exclusiva durante os horários do curso?`)
 
   if (pergunta1 === `sim` && pergunta2 === `sim` && pergunta3 === `sim`){
-    console.log(true)
+    console.log(pergunta1 === `sim` && pergunta2 === `sim` && pergunta3 === `sim`)
   } else {
     console.log(false)
   } 
+
+
+  // console.log(pergunta1 === `sim` && pergunta2 === `sim` && pergunta3 === `sim`)
     
 }
