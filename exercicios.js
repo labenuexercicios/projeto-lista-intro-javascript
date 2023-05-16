@@ -95,29 +95,34 @@ function checaStringsMesmoTamanho(string1, string2) {
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-carros = [array];
-const primeiroArray = array[0];
-return primeiroArray
+  const carros = [array]
+  return carros[0]
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-  array = []
-  const ultimoElemento = array.lastIndexof()
-  console.log(ultimoElemento)
+
+  const ultimoElemento = [array]
+  return ultimoElemento.lastIndexOf()
 
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
+  const trocaElementos = [array]
+  return trocaElementos.reverse();
 
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
+const primeiro = string1.toUpperCase()
+const segundo = string2.toUpperCase()
+return primeiro === segundo
+
 
 }
 
