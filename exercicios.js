@@ -106,29 +106,32 @@ retornaPrimeiroElemento()
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-console.log(array.length - 1)
-
+const ultimoElemento = array[array.length - 1]
+return (ultimoElemento)
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
-
+  [array[0], array[array.length - 1]] = [array[array.length - 1], array[0]];
+  return array;
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-
-
+const igualdade = string1.toUpperCase() === string2.toUpperCase()
+return (igualdade)
 
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
-  // implemente sua lógica aqui
+  // implemente sua lógica aqui  
 
-}
+}  
+
+
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
