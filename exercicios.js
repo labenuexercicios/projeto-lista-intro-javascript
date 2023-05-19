@@ -120,8 +120,8 @@ function trocaPrimeiroEUltimo(array) {
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-const igualdade = string1.toUpperCase() === string2.toUpperCase()
-return (igualdade)
+  const igualdade = string1.toUpperCase() === string2.toUpperCase()
+  return (igualdade)
 
 }
 
