@@ -149,7 +149,6 @@ const bissexto = (ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0 )
 return bissexto
 
 }
-
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
