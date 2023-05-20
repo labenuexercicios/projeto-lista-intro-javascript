@@ -95,25 +95,29 @@ function checaStringsMesmoTamanho(string1, string2) {
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-  const carros = [array]
-  return carros[0]
+  const mouse = array[0]
+  return mouse
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-
-  const ultimoElemento = [array]
-  return ultimoElemento.lastIndexOf()
+  const ultimo = array[array.length-1]
+  return ultimo
 
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
-  const trocaElementos = [array]
-  return trocaElementos.reverse();
+const primeiroElemento = array[0]
+const ultimoElemento = array[array.length-1]
+array.pop()
+array.shift()
+array.push(primeiroElemento)
+array.unshift(ultimoElemento)
 
+return array
 }
 
 // EXERCÍCIO 12
@@ -122,24 +126,37 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
 const primeiro = string1.toUpperCase()
 const segundo = string2.toUpperCase()
 return primeiro === segundo
-
-
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
+const anoAtual = Number(prompt(`Insira aqui o ano atual: `))
+const anoNascimento = Number(prompt(`Insira o ano de nascimento: `))
+const anoEmissao = Number(prompt(`Ano de emissão de seu RG: `))
+const idade = anoAtual - anoNascimento
+const renovacaoRg = anoAtual - anoEmissao
+const precisaRenovar = (idade <= 20 && renovacaoRg >= 5) ||((idade > 20 && idade <= 50)  && renovacaoRg >= 10) || (idade > 50 && renovacaoRg >= 15) 
+
+console.log(precisaRenovar)
 
 }
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
+const bissexto = (ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0 )
+return bissexto
 
 }
 
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
+const idade = prompt()
+const ensino = prompt()
+const disponibilidade = prompt()
 
+const inscricao = idade == "sim" && ensino =="sim" && disponibilidade == "sim"
+console.log(inscricao)
 }
