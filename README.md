@@ -4,10 +4,11 @@ A **Lista de Introdução a Javascript**  é uma lista de exercícios automatiza
 
 Os problemas lógicos se baseiam em quatro conteúdos principais:
 - Funções
-- Variáveis
-- Operadores
 - Strings
 - Arrays
+- Objetos
+
+
 
 
 ## Enunciado
