@@ -3,7 +3,7 @@
 A **Lista de Introdução a Javascript**  é uma lista de exercícios automatizada, em que haverá problemas lógicos a serem resolvidos e implementados por vocês. Além disso, a lista conta com resultados imediatos das implementações, que vocês poderão verificar em uma página do navegador web.
 
 Os problemas lógicos se baseiam em quatro conteúdos principais:
-
+- Funções
 - Variáveis
 - Operadores
 - Strings
