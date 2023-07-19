@@ -134,6 +134,8 @@ function checaRenovacaoRG() {
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
+  const bissexto = ano % 400 === 0 || (ano % 4 === 0 && ano % 100 !== 0);
+  return Boolean(bissexto);
 }
 
 // EXERCÍCIO 15
