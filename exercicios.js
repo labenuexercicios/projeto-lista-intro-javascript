@@ -23,11 +23,13 @@ function calculaAreaRetangulo() {
   console.log(altura * largura);
 }
 
-console.log(areaRetangulo);
-
 // EXERCÍCIO 02
-function imprimeIdade(anoAtual, anoDeNascimento) {
+function imprimeIdade() {
   //   implemente sua lógica aqui
+  const anoAtual = prompt("Digite a altura");
+  const anoDeNascimento = prompt("Digite a largura");
+  const idade = anoAtual - anoDeNascimento
+  console.log(idade)
 }
 
 // EXERCÍCIO 03
