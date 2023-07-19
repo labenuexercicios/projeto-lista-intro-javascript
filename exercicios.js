@@ -116,17 +116,19 @@ function checaRenovacaoRG() {
   const anoAtual = prompt("Digite o ano atual: ");
   const anoDeNascimento = prompt("Digite o ano de nascimento: ");
   const anoDeAdmissao = prompt("Digite o ano de admissao: ");
-  if ((anoAtual - anoDeNascimento) <= 20){
-    const precisaRenovar = (anoAtual - anoDeAdmissao) >= 5;
-    console.log(Boolean(precisaRenovar))
-  }else if ((anoAtual - anoDeNascimento) > 20 && (anoAtual - anoDeNascimento) <= 50){
-    const precisaRenovar = (anoAtual - anoDeAdmissao) >= 10
-    console.log(Boolean(precisaRenovar))
-  } else if((anoAtual - anoDeNascimento) > 50){
-    const precisaRenovar = (anoAtual - anoDeAdmissao) > 15
-    console.log(Boolean(precisaRenovar))
+  if (anoAtual - anoDeNascimento <= 20) {
+    const precisaRenovar = anoAtual - anoDeAdmissao >= 5;
+    console.log(Boolean(precisaRenovar));
+  } else if (
+    anoAtual - anoDeNascimento > 20 &&
+    anoAtual - anoDeNascimento <= 50
+  ) {
+    const precisaRenovar = anoAtual - anoDeAdmissao >= 10;
+    console.log(Boolean(precisaRenovar));
+  } else if (anoAtual - anoDeNascimento > 50) {
+    const precisaRenovar = anoAtual - anoDeAdmissao > 15;
+    console.log(Boolean(precisaRenovar));
   }
-
 }
 
 // EXERCÍCIO 14
