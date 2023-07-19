@@ -86,7 +86,8 @@ function retornaPrimeiroElemento(array) {
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui====
+  // implemente sua lógica aqui
+  return array.pop()
 }
 
 // EXERCÍCIO 11
