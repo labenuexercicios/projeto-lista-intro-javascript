@@ -141,4 +141,32 @@ function checaAnoBissexto(ano) {
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
+  const age = prompt("tem mais de 18?: ").toUpperCase();
+  const degree = prompt("tem ensino médio completo?: ").toUpperCase();
+  const schedule = prompt("tem disponibilidade de horários?: ").toUpperCase();
+
+  let inscricao = false;
+
+  if (age === "SIM" || age === "S") {
+  } else if (age === "NAO" || age === "NÃO" || age === "N") {
+  } else {
+    console.log("Resposta inválida. Insira sim ou não!");
+  }
+
+  if (degree === "SIM" || degree === "S") {
+  } else if (degree === "NAO" || degree === "NÃO" || degree === "N") {
+  } else {
+    console.log("Resposta inválida. Insira sim ou não!");
+  }
+
+  if (schedule === "SIM" || schedule === "S") {
+  } else if (schedule === "NAO" || schedule === "NÃO" || schedule === "N") {
+  } else {
+    console.log("Resposta inválida. Insira sim ou não!");
+  }
+
+  if (age === "SIM" && degree === "SIM" && schedule === "SIM") {
+    inscricao = true;
+  }
+  console.log(inscricao);
 }
