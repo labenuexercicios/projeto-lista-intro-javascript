@@ -5,7 +5,10 @@ function soma(num1, num2) {
   // implemente sua lógica aqui
   return num1 + num2
 }
-
+const numero1 = 2
+const numero2 = 10
+const resultadoSoma = soma(numero1,numero2)
+console.log(resultadoSoma)
 // EXERCÍCIO 0B
 function imprimeMensagem() {
   // implemente sua lógica aqui
