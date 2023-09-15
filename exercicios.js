@@ -138,6 +138,12 @@ function checaRenovacaoRG() {
   let anoAtual = prompt('Informe o ano atual')
   let anoNasc = prompt('Informe o ano do seu nascimento')
   let anoEmiss = prompt('Informe da emissao da carteira')
+  let renovaCarteira = (anoAtual - anoNasc) <= 20
+  // if ((anoAtual - anoNasc) <= 20){ console.log(true);}
+  // else if (((anoAtual - anoNasc) > 20) && ((anoAtual - anoNasc) <= 50)){
+  //   console.log(true);
+  // }
+
 
 }
 
@@ -150,14 +156,11 @@ function checaAnoBissexto(ano) {
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
-  let pergunta1 = prompt('Você tem mais de 18 anos')
-  let pergunta2 = prompt('Você possui ensino médio completo?')
-  let pergunta3 = prompt('Você possui disponibilidade exclusiva durante os horários do curso?')
-  let positivo1 = pergunta1 === 'sim' 
-  let positivo2 = pergunta2 === 'sim'
-  let positivo3 = pergunta3 === 'sim'
-  if ((positivo1 === 'sim' ) && (positivo2=== 'sim' ) && (positivo3 === 'sim' )){
-     console.log(true);
-   }
+  
+  let respIdade = prompt("Você tem mais de 18 anos? (sim ou nao)").toLowerCase();
+  let respEnsinoMedio = prompt("Você possui ensino médio completo? (sim ou nao)").toLowerCase();
+  let respDisponibilidade = prompt("Você possui disponibilidade exclusiva durante os horários do curso? (sim ou nao)").toLowerCase();
 
+  let validacao = respIdade === "sim" && respEnsinoMedio === "sim" && respDisponibilidade === "sim";
+  console.log(validacao);
 }
