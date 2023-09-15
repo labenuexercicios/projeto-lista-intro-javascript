@@ -88,8 +88,10 @@ function calculaIngressosEspetaculo(custo, valorIngresso) {
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-   ((string1.lenght === 3)) 
-  return true
+   //let compara = (string1.lenght > string2.lenght) 
+   //|| string1.lenght < string2.lenght ) 
+   let compare  =  (string1.length == string2.length) || (string1.length > string2.length)
+   return compare
   
 }
 
@@ -114,8 +116,9 @@ function retornaUltimoElemento(array) {
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
-       
-  return array.shift()
+  array.pop 
+  array.uns     
+  
 }
 
 // EXERCÍCIO 12
@@ -127,6 +130,9 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
+  let anoAtual = prompt('Informe o ano atual')
+  let anoNasc = prompt('Informe o ano do seu nascimento')
+  let anoEmiss = prompt('Informe da emissao da carteira')
 
 }
 
@@ -139,5 +145,14 @@ function checaAnoBissexto(ano) {
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
+  let pergunta1 = prompt('Você tem mais de 18 anos')
+  let pergunta2 = prompt('Você possui ensino médio completo?')
+  let pergunta3 = prompt('Você possui disponibilidade exclusiva durante os horários do curso?')
+  let positivo1 = pergunta1 === 'sim' 
+  let positivo2 = pergunta2 === 'sim'
+  let positivo3 = pergunta3 === 'sim'
+  if ((positivo1 === 'sim' ) && (positivo2=== 'sim' ) && (positivo3 === 'sim' )){
+     console.log(true);
+   }
 
 }
