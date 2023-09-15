@@ -124,6 +124,11 @@ function trocaPrimeiroEUltimo(array) {
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
+   
+   //(string1.localeCompare == string2.localeCompare) || !(string1.localeCompare == string2.localeCompare)
+   let compare2  =  (string1.toUpperCase() === string2.toUpperCase())
+   //|| (string1.length > string2.length)
+   return compare2
 
 }
 
