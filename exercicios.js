@@ -73,22 +73,24 @@ function imprimeTresCoresFavoritas() {
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
   //implemente sua lógica aqui
-  let novaFrase = string  
-  novaFrase = prompt('escreva uma frase')  
-    let novaString = novaFrase.toUpperCase()
-  console.log(novaString);
+  let nomeMaiusculo = string
+
+  return nomeMaiusculo.toUpperCase()
 }
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
-
+  let calculTotal = custo / valorIngresso
+  return calculTotal
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-
+   ((string1.lenght === 3)) 
+  return true
+  
 }
 
 // EXERCÍCIO 09
@@ -97,21 +99,23 @@ function retornaPrimeiroElemento(array) {
   
   return array[0];
 }
-let array = ['teste','porta','batata']
+
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-  array = [1,2,3,4,5]
-    
-  console.log(lastEle[4]);
+
+  
+  return array.pop();
+   
 
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
-
+       
+  return array.shift()
 }
 
 // EXERCÍCIO 12
