@@ -105,12 +105,16 @@ function retornaUltimoElemento(array) {
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-    return array
-}
+    /* return array.splice(0,-1) */
+    
+  }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
-  // implemente sua lógica aqui
+  // implemente sua lógica aqui return string1.length == string2.length
+
+  /* return string1.localeCompare(string2, undefined, { sensitivity: 'accent' }) */
+  /* return string1.localeCompare(string2) */
 
 }
 
