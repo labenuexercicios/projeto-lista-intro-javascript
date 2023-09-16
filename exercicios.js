@@ -135,22 +135,36 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
-  let anoAtual = prompt('Informe o ano atual')
-  let anoNasc = prompt('Informe o ano do seu nascimento')
-  let anoEmiss = prompt('Informe da emissao da carteira')
-  let renovaCarteira = (anoAtual - anoNasc) <= 20
-  // if ((anoAtual - anoNasc) <= 20){ console.log(true);}
-  // else if (((anoAtual - anoNasc) > 20) && ((anoAtual - anoNasc) <= 50)){
-  //   console.log(true);
-  // }
-
+  // let anoAtual = prompt('Informe o ano atual')
+  // let anoNasc = prompt('Informe o ano do seu nascimento')
+  // let anoEmiss = prompt('Informe da emissao da carteira')
+  // let renovaCarteira = (anoAtual - anoNasc) <= 20
+  // // if ((anoAtual - anoNasc) <= 20){ console.log(true);}
+  // // else if (((anoAtual - anoNasc) > 20) && ((anoAtual - anoNasc) <= 50)){
+  // //   console.log(true);
+  // // }
+  anoAtual = Number(prompt('Informe o ano atual'))
+  anoNascimento = Number(prompt('Informe sua data de nascimento'))
+  emissaoCarteira = Number(prompt('Informe o ano da data de emissao da sua CNH'))
+  idade = anoAtual - anoNascimento
+  validade = anoAtual - emissaoCarteira
+  if(idade <= 20 && validade >= 5){
+    console.log(true)
+  }else if(idade >=20 && idade <= 50 && validade >= 10){
+    console.log(true)
+  }else if(idade >50 && validade >= 15){
+    console.log(true)
+  }
+  else {
+    console.log(false)
+  }
 
 }
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
-
+ 
 }
 
 // EXERCÍCIO 15
