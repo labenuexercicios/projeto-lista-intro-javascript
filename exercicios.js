@@ -112,12 +112,13 @@ function trocaPrimeiroEUltimo(array) {
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
-  const check1 = string1
-  const check2 = string2
-  checarIgualdade = string1 === string2
-  return checarIgualdade
+  const check1 = string1.toLowerCase()
+  const check2 = string2.toLowerCase()
+  checkIgual = check1 == check2
 
+return checkIgual
 }
+
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
