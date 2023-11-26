@@ -59,7 +59,7 @@ function calculaIMC(){
 
   function imprimeInformacoesUsuario(){
     const name=prompt(("Qual e o seu nome"));
-    const idade=prompt(("Qual e a sua idade"));
+    const idade=prompt(("Qual e a sua idade?"));
     const email=prompt((" Qual e o seu email"));
     
     console.log( "Meu nome é",{name},"tenho", {idade}, "anos", "e o meu email é", {email});
